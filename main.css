@@ -1,0 +1,17 @@
+body {
+	background: url("gaming-pattern.png");
+}
+
+.modal-trigger {
+	margin-top: 10%;
+	text-align: center;
+}
+
+.body-container {
+	height: 300px;
+}
+
+#events {
+	font-weight: bold;
+	font-size: 2em;
+}
