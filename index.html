@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="author" content="Akash Saravanan">
+		<!--Just Changed some code :)-->
+		<meta name="author" content="Nikhil Kumaran">
 
 		<title>Form</title>
 		<!-- Compiled and minified CSS -->
@@ -23,40 +25,40 @@
         		</p>
             </div>
             <!-- Modal Content -->
-            <div id="modal1" class="modal modal-fixed-footer">
+            <div id="modal1" class="modal modal-fixed-footer bg">
               <div class="modal-content">
                   <div class='row'>
                       <div class='col s12'>
-                          <h4>SVCE Interrupt '17 - Registration</h4>
+                          <h4 style="text-align:center">SVCE Interrupt '17 - Registration</h4>
                           <form class="col s12" action='#'>
                              <div class="row">
                                <div class="input-field col s12 m6">
-                                   <i class="material-icons prefix">person_outline</i>
-                                 <input id="first_name" type="text" class="validate">
+                                   <i class="material-icons prefix">person</i>
+                                 <input id="first_name" type="text" class="validate"data-length="15">
                                  <label for="first_name">First Name</label>
                                </div>
                                <div class="input-field col s12 m6">
-                                   <i class="material-icons prefix">person_outline</i>
-                                 <input id="last_name" type="text" class="validate">
+                                   <i class="material-icons prefix">person</i>
+                                 <input id="last_name" type="text" class="validate"data-length="15">
                                  <label for="last_name">Last Name</label>
                                </div>
                              </div>
                              <div class="row">
                                <div class="input-field col s12 m6">
                                    <i class="material-icons prefix">email</i>
-                                 <input id="email" type="email" class="validate">
+                                 <input id="email" type="email" class="validate"data-length="35">
                                  <label for="email">Email</label>
                                </div>
                                <div class="input-field col s12 m6">
-                                   <i class="material-icons prefix">local_phone</i>
-                                 <input id="phone" type="tel" class="validate">
+                                   <i class="material-icons prefix">phone_iphone</i>
+                                 <input id="phone" type="tel" class="validate"data-length="10">
                                  <label for="phone">Phone Number</label>
                                </div>
                              </div>
                              <div class="row">
                                <div class="input-field col s12">
                                    <i class="material-icons prefix">school</i>
-                                 <input id="college" type="text" class="validate">
+                                 <input id="college" type="text" class="validate"data-length="35">
                                  <label for="college">College Name</label>
                                </div>
                              </div>
@@ -110,12 +112,16 @@
                                </div>
                              </div>
                           </form>
+
                       </div>
                   </div>
+						<div style="border-bottom:2px dashed white"></div>
               </div>
-              <div class="modal-footer">
+
+              <div class="modal-footer" style="background-color:black">
+
                    <button class="btn waves-effect waves-light col s6 offset-s3" type="submit" name="action">Register
-                       <i class="material-icons right">send</i>
+                       <i class="material-icons right">done</i>
                    </button>
               </div>
             </div>
