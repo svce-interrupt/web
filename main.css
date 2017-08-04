@@ -1,14 +1,28 @@
 body {
-	background: url("gaming-pattern.png");
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    background: #1f263b;
+    background: -moz-linear-gradient(top, #1f263b 0%, #2c3654 100%);
+    background: -webkit-linear-gradient(top, #1f263b 0%,#2c3654 100%);
+    background: linear-gradient(to bottom, #1f263b 0%,#2c3654 100%);
 }
 
-.modal-trigger {
-	margin-top: 10%;
+div.absolute-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s;
+}
+
+.text-center {
 	text-align: center;
-}
-
-.body-container {
-	height: 300px;
 }
 
 #events {
