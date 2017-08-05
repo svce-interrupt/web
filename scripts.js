@@ -14,7 +14,6 @@ canvas.height = document.body.clientHeight;
 var ctx = canvas.getContext('2d');
 
 
-
 /*Modify options here*/
 
 //possible characters that will appear
