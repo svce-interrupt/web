@@ -25,3 +25,9 @@ div.absolute-center {
 	font-weight: bold;
 	font-size: 2em;
 }
+.imge{
+   position:fixed;
+   top:10%;
+   left:5%;
+
+}
