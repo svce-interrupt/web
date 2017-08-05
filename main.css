@@ -25,3 +25,8 @@ div.absolute-center {
 	font-weight: bold;
 	font-size: 2em;
 }
+
+.content-box {
+    background: white;
+    padding: 5em; 
+}
