@@ -12,131 +12,153 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 	<!-- Custom style -->
-	<link href="main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-	<canvas></canvas>
-	<div class='container'>
-		<div class="absolute-center content-box">
-			<div class='home content'>
-				<div class="img animated bounce center-align">
-					 <img  src="https://image.freepik.com/iconos-gratis/cuaderno_318-81563.jpg" alt="image">
-				</div>
-				<h1>Welcome to Interrupt 2017!</h1>
-				<p>
-					The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just
-				</p>
-				<!-- Modal Trigger -->
-				<p class='center-align'>
-					<a class="waves-effect waves-light hoverable btn btn-large modal-trigger" href="#modal1">Register Now</a>
-				</p>
-			</div>
-			<div class='about content'>
-				<h1>About Interrupt 2017</h1>
-				<p>
-					Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy! ", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+	<div class="horizon-prev"><img src="images/l-arrow.png"></div>
+	<div class="horizon-next"><img src="images/r-arrow.png"></div>
 
-				</p>
+	<section data-role="section" id="home">
+		<div class='col s10 offset-s1 page text-center'>
+			<div class="img animated bounce center-align">
+				 <img src="images/laptop.png" alt="image">
+			</div>
+			<div class='glitch'>
+				<h1 class='glitchText'>INTERRUPT '17</h1>
+				<h1 class='glitchText'>INTERRUPT '17</h1>
+				<h1 class='glitchText'>INTERRUPT '17</h1>
+			</div>
+			<!-- Modal Trigger -->
+			<br /><br /><br />
+			<p class='center-align'>
+				<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Register Now</a>
+			</p>
+			<!-- Modal Content -->
+			<div id="modal1" class="modal modal-fixed-footer">
+				<form class="col s12" action='#'>
+					<div class="modal-content">
+						<div class='row'>
+							<div class='col s12'>
+								<h4 class="center-align">SVCE Interrupt '17 - Registration</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix">person</i>
+								<input id="first_name" type="text" class="validate" data-length="20">
+								<label for="first_name">First Name</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix">person</i>
+								<input id="last_name" type="text" class="validate" data-length="20">
+								<label for="last_name">Last Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate" data-length="35">
+								<label for="email">Email</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<i class="material-icons prefix">local_phone</i>
+								<input id="phone" type="tel" class="validate"  data-length="10">
+								<label for="phone">Phone Number</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">school</i>
+								<input id="college" type="text" class="validate" data-length="50">
+								<label for="college">College Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 text-center">
+								<span class='bold-text'>Events</span><br />
+							</div>
+						</div>
+						<div class="row">
+							<div class='col s12 m4'>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event1"/>
+									<label for="event1">Event One</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event2"/>
+									<label for="event2">Event Two</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event3"/>
+									<label for="event3">Event Three</label>
+								</p>
+							</div>
+							<div class='col s12 m4'>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event4"/>
+									<label for="event4">Event Four</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event5"/>
+									<label for="event5">Event Five</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event6"/>
+									<label for="event6">Event Six</label>
+								</p>
+							</div>
+							<div class='col s12 m4'>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event7"/>
+									<label for="event7">Event Seven</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event8"/>
+									<label for="event8">Event Eight</label>
+								</p>
+								<p>
+									<input name='selectEvent' type="checkbox" id="event9"/>
+									<label for="event9">Event Nine</label>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn waves-effect waves-light col s6 offset-s3" type="submit" name="action">Register
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
-		<!-- Modal Content -->
-		<div id="modal1" class="modal modal-fixed-footer">
-			<form class="col s12" action='#'>
-				<div class="modal-content">
-					<div class='row'>
-						<div class='col s12'>
-							<h4 class="center-align">SVCE Interrupt '17 - Registration</h4>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12 m6">
-							<i class="material-icons prefix">person</i>
-							<input id="first_name" type="text" class="validate" data-length="20">
-							<label for="first_name">First Name</label>
-						</div>
-						<div class="input-field col s12 m6">
-							<i class="material-icons prefix">person</i>
-							<input id="last_name" type="text" class="validate" data-length="20">
-							<label for="last_name">Last Name</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12 m6">
-							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate" data-length="35">
-							<label for="email">Email</label>
-						</div>
-						<div class="input-field col s12 m6">
-							<i class="material-icons prefix">local_phone</i>
-							<input id="phone" type="tel" class="validate"  data-length="10">
-							<label for="phone">Phone Number</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<i class="material-icons prefix">school</i>
-							<input id="college" type="text" class="validate" data-length="50">
-							<label for="college">College Name</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12 text-center">
-							<span id='events'>Events</span><br />
-						</div>
-					</div>
-					<div class="row">
-						<div class='col s12 m4'>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event1"/>
-								<label for="event1">Event One</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event2"/>
-								<label for="event2">Event Two</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event3"/>
-								<label for="event3">Event Three</label>
-							</p>
-						</div>
-						<div class='col s12 m4'>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event4"/>
-								<label for="event4">Event Four</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event5"/>
-								<label for="event5">Event Five</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event6"/>
-								<label for="event6">Event Six</label>
-							</p>
-						</div>
-						<div class='col s12 m4'>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event7"/>
-								<label for="event7">Event Seven</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event8"/>
-								<label for="event8">Event Eight</label>
-							</p>
-							<p>
-								<input name='selectEvent' type="checkbox" id="event9"/>
-								<label for="event9">Event Nine</label>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button class="btn waves-effect waves-light col s6 offset-s3" type="submit" name="action">Register
-						<i class="material-icons right">send</i>
-					</button>
-				</div>
-			</form>
+	</section>
+
+	<section data-role="section" id="about">
+		<div class='page text-center'>
+			<h1>About Interrupt 2017</h1>
+			<p>
+				Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy! ", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+			</p>
 		</div>
-	</div>
+	</section>
+
+	<section data-role="section" id="events">
+		<div class='page text-center'>
+			<h1>Events @ Interrupt 2017</h1>
+			<p>
+				Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy! ", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+			</p>
+		</div>
+	</section>
+
+	<section data-role="section" id="team">
+		<div class='page text-center'>
+			<h1>Team - Interrupt 2017</h1>
+			<p>
+				Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy! ", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels. Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+			</p>
+		</div>
+	</section>
     <!-- core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -144,6 +166,8 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+	<script src="jquery.horizonScroll.js"></script>
     <script src="scripts.js"></script>
     <!--
     ================================================== -->
