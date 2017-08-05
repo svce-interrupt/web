@@ -1,3 +1,9 @@
+
+.bounce{
+   position:absolute;
+   top:20%;
+   left:10%;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -10,7 +16,6 @@ body {
     background: -webkit-linear-gradient(top, #1f263b 0%,#2c3654 100%);
     background: linear-gradient(to bottom, #1f263b 0%,#2c3654 100%);
 }
-
 div.absolute-center {
     position: fixed;
     top: 50%;
@@ -20,52 +25,8 @@ div.absolute-center {
     visibility: visible;
     transition: all .5s;
 }
-
-.text-center {
-	text-align: center;
-}
-
-#events {
-	font-weight: bold;
-	font-size: 2em;
-}
-.input-field label {
-    color: white;
-  }
-  /* label focus color */
-  .input-field input[type=text]:focus+label {
-    color: #2874a6 !important;
-  }
-  .input-field input[type=email]:focus+label {
-    color: #2874a6 !important;
-  }
-  .input-field input[type=tel]:focus+label {
-    color: #2874a6 !important;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #2874a6 !important ;
-    box-shadow: 0 1px 0 0 #2874a6 !important;
-  }
-   .input-field input[type=tel]:focus {
-    border-bottom: 1px solid #2874a6 !important ;
-    box-shadow: 0 1px 0 0 #2874a6 !important;
-  }.input-field input[type=email]:focus {
-    border-bottom: 1px solid #2874a6 !important ;
-    box-shadow: 0 1px 0 0 #2874a6 !important;
-  }
-  /* icon prefix focus color */
-  .input-field .prefix.active {
-    color: #2874a6 !important;
-  }
-  .bg{
-     background-color:black;
-     color:white;
-     box-shadow:2px;
- }
-.btn{
-   background-color:#2874a6;
-}
-.btn:hover{
-   background-color:#1d6391;
+#bounce {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
 }
