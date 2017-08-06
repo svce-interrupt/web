@@ -249,6 +249,10 @@ html {
 
 /*Add CSS Here*/
 
+h4 {
+	color: black;
+}
+
 .page {
     padding: 5em;
 }
@@ -260,6 +264,7 @@ html {
 .bold-text {
 	font-weight: bold;
 	font-size: 2em;
+	color: black;
 }
 
 @media screen and (max-width: 560px){
