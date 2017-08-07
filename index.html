@@ -15,9 +15,13 @@
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-		<div class="horizon-prev" id="section01"><a><span></span></a></div>
-		<div class="horizon-next" id="section02"><a><span></span></a></div>
+	<!-- Movement icons
+	================================================== -->
+	<div class="horizon-prev" id="section01"><a><span></span></a></div>
+	<div class="horizon-next" id="section02"><a><span></span></a></div>
 
+	<!-- Home Section
+	================================================== -->
 	<section data-role="section" id="home">
 		<div class='col s10 offset-s1 page text-center'>
 			<div class="img animated bounce center-align">
@@ -133,6 +137,8 @@
 		</div>
 	</section>
 
+	<!-- About Section
+	================================================== -->
 	<section data-role="section" id="about">
 		<div class='page text-center'>
 			<h1>About Interrupt 2017</h1>
@@ -142,9 +148,11 @@
 		</div>
 	</section>
 
+	<!-- Events Section
+	================================================== -->
 	<section data-role="section" id="events">
 		<h1>Events<h1>
-			<div class="contain">
+		<div class="contain">
 			<a class="client modal-trigger" href="#modal2"><h2>Event1</h2></a>
 			<a class="client modal-trigger" href="#modal2"><h2>Event2</h2></a>
 			<a class="client modal-trigger" href="#modal2"><h2>Event3</h2></a>
@@ -157,17 +165,20 @@
 			<a class="client modal-trigger" href="#modal2"><h2>Event10</h2></a>
 			<div class="clearer"></div>
 		</div>
+		<!-- Modal Structure -->
+	   <div id="modal2" class="modal">
+		 <div style="color:black"class="modal-content">
+		   <h4>Event description</h4>
+		   <p>About the event</p>
+		 </div>
+		 <div class="modal-footer">
+		   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		 </div>
+	   </div>
 	</section>
-	<!-- Modal Structure -->
-   <div id="modal2" class="modal">
-     <div style="color:black"class="modal-content">
-       <h4>Event description</h4>
-       <p>About the event</p>
-     </div>
-     <div class="modal-footer">
-       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-     </div>
-   </div>
+
+	<!-- Team Section
+	================================================== -->
 	<section data-role="section" id="team">
 		<div class='page text-center'>
 			<h1>Team - Interrupt 2017</h1>
