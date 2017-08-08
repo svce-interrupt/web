@@ -394,6 +394,12 @@ h1 {
 	color: black;
 }
 
+.modal-content {
+    padding: 2em;
+}
+
+/*Mobile specific*/
+
 @media screen and (max-width: 560px){
     .page {
         padding: 2em;
