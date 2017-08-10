@@ -527,3 +527,41 @@ box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
       font-size:20px;
    }
 }
+
+/*Laptop image 3D hover movement*/
+.logo {
+   border-radius: 10px;
+   background-color:rgba(255,255,255,0.1);
+   cursor:pointer;
+   margin:2% auto;
+   width: 230px; }
+.lodo-list:after {
+   content: " ";
+   display: block;
+   clear: both; }
+.logo__card {
+   position: relative;
+   width: 230px;
+   height: 230px;
+
+   transition: 0s ease-out; }
+.logo [class*="layer"] {
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+ }
+.logo .layer {
+
+   margin-left:15px;
+   margin-top:15px;
+   width:200px;
+   height:200px;
+
+   -webkit-transform: translateZ(30px);
+   transform: translateZ(30px); }
+
+.logo .shine {
+   border-radius: 10px;
+   }
