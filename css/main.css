@@ -70,6 +70,86 @@ html {
         background-size: 120%;
     }
 }
+
+/*Add CSS Here*/
+
+h1 {
+    text-align: center;
+}
+
+.page {
+    padding: 5em;
+    margin: auto 5%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bold-text {
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+}
+
+.modal-content {
+    padding: 2em;
+}
+
+/*Event Boxes*/
+.event {
+   border:1px solid rgba(193,79,82,1);
+   background-color:transparent;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   transition: all 0.1s;
+}
+
+.event:hover {
+   -ms-transform: scale(1.1,1.1); /* IE 9 */
+   -webkit-transform: scale(1.1,1.1); /* Safari */
+   transform: scale(1.1,1.1);
+   -webkit-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+   -moz-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+   box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+   border-right:1px solid transparent;
+   border-bottom:1px solid transparent;
+   background-color:#fff;
+}
+
+.event h5 {
+   color:#fff;
+   padding: 2em;
+   text-align: center;
+}
+
+.event:hover h5{
+   color:black;
+}
+
+/*Mobile specific*/
+@media screen and (max-width: 600px){
+    .page {
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .text-center {
+    	text-align: justify;
+    }
+
+    .event h5 {
+       padding: 0.1em;
+    }
+}
+
 /*Glitch Text Effect*/
 .glitch {
     margin: 5% auto;
@@ -380,188 +460,45 @@ html {
   }
 }
 
-/*Add CSS Here*/
-
-h1 {
-    text-align: center;
-}
-
-.page {
-    padding: 5em;
-    margin:auto 5%;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.bold-text {
-	font-weight: bold;
-	font-size: 2em;
-	color: black;
-}
-
-.modal-content {
-    padding: 2em;
-}
-
-/*Mobile specific*/
-
-@media screen and (max-width: 600px){
-    .page {
-        padding: 2em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .text-center {
-    	text-align: justify;
-    }
-}
-.event-solo {
-   width:180px;
-   height:180px;
-   border:1px solid rgba(193,79,82,1);
-
-   background-color:transparent;
-   text-align:center;
-   float:left;
-   font-family: 'Open Sans', sans-serif;
-   letter-spacing:1px;
-   -webkit-transition: all 0.1s;
-   -moz-transition: all 0.1s;
-   transition: all 0.1s;
-
-   cursor:pointer;
-}
-
-.team{
-   margin-left:15%;
-}
-
-
-
-.event-solo h5 {
-   font-size:30px;
-   color:#fff;
-   padding-top:40%;
-   margin:0px;
-   font-weight:100;
-}
-
-
-
-
-
-.event-solo:hover {
-   -ms-transform: scale(1.1,1.1); /* IE 9 */
--webkit-transform: scale(1.1,1.1); /* Safari */
-transform: scale(1.1,1.1);
-   -webkit-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
--moz-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
-   z-index:9999;
-   border-right:1px solid transparent;
-   border-bottom:1px solid transparent;
-   cursor:pointer;
-   background-color:#fff;
-
-
-}
-.event-solo:hover h5{
-   color:black;
-}
-@media screen and (max-width:890px) {
-   .event-solo {
-      width:160px;
-      height:160px;
-   }
-   .event-solo h5 {
-      font-size:30px;
-   }
-}
-@media screen and (max-width:795px) {
-   .event-solo {
-      width:150px;
-      height:150px;
-   }
-   .event-solo h5 {
-      font-size:25px;
-   }
-}
-@media screen and (max-width:745px) {
-   .event-solo {
-      width:130px;
-      height:130px;
-   }
-   .event-solo h5 {
-      font-size:23px;
-   }
-}
-@media screen and (max-width:665px) {
-   .event-solo {
-      width:120px;
-      height:120px;
-   }
-   .event-solo h5 {
-      font-size:22px;
-   }
-}
-@media screen and (max-width:623px) {
-   .event-solo {
-      width:110px;
-      height:110px;
-   }
-   .event-solo h5 {
-      font-size:22px;
-   }
-}
-@media screen and (max-width:473px) {
-   .event-solo {
-      width:95px;
-      height:95px;
-   }
-   .event-solo h5 {
-      font-size:20px;
-   }
-}
-
 /*Laptop image 3D hover movement*/
 .logo {
    border-radius: 10px;
    background-color:rgba(255,255,255,0.1);
    cursor:pointer;
    margin:2% auto;
-   width: 230px; }
+   width: 230px;
+}
+
 .lodo-list:after {
    content: " ";
    display: block;
-   clear: both; }
+   clear: both;
+}
+
 .logo__card {
    position: relative;
    width: 230px;
    height: 230px;
+   transition: 0s ease-out;
+}
 
-   transition: 0s ease-out; }
 .logo [class*="layer"] {
    position: absolute;
    left: 0;
    top: 0;
    right: 0;
    bottom: 0;
- }
-.logo .layer {
+}
 
+.logo .layer {
    margin-left:15px;
    margin-top:15px;
    width:200px;
    height:200px;
-
    -webkit-transform: translateZ(30px);
-   transform: translateZ(30px); }
+   transform: translateZ(30px);
+}
 
 .logo .shine {
    border-radius: 10px;
-   }
+}
