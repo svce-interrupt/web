@@ -1,37 +1,5 @@
-/*Horizontal Scroll*/
-html,
-body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  color: white;
-}
-
-section {
-  float: left;
-  display: block;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.horizon-prev,
-.horizon-next {
-  position: fixed;
-  top: 50%;
-  margin-top: -24px;
-  z-index: 9999;
-}
-
-.horizon-prev { left: 20px; }
-
-.horizon-next { right: 20px; }
-
 /*Background*/
 html {
-	height: 100%;
 	background-color: hsla(200,40%,30%,.4);
 	background-image:
 		url('bg.jpg');
@@ -70,6 +38,39 @@ html {
         background-size: 120%;
     }
 }
+
+/*Horizontal Scroll*/
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+}
+
+section {
+  float: left;
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.horizon-prev,
+.horizon-next {
+  position: fixed;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 9999;
+}
+
+.horizon-prev { left: 20px; }
+
+.horizon-next { right: 20px; }
+
+
 
 /*Add CSS Here*/
 
