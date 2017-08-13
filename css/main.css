@@ -30,7 +30,7 @@ h1 {
 section {
 	height: 100%;
 	width: 100%;
-	padding: 15% 0;
+	padding: 9% 0;
 	display: block;
 	background: rgba(0, 0, 0, 0.2);
 }
@@ -288,8 +288,9 @@ section {
 /*Laptop image 3D hover movement*/
 .logo {
    border-radius: 10px;
-   background-color:rgba(255,255,255,0.1);
+   background-color:rgba(255,255,255,0.2);
    cursor:pointer;
+
    margin:2% auto;
    width: 230px;
 }
@@ -326,4 +327,7 @@ section {
 
 .logo .shine {
    border-radius: 10px;
+}
+.btn-floating{
+	background-color:rgba(78, 143, 0,0.4) !important;
 }
