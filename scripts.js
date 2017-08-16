@@ -29,10 +29,15 @@ sr.reveal('.logo',{
 
 $(document).ready(function(){
     $('.modal').modal();
+	$(".button-collapse").sideNav({
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+    });
+
     $(".logo").hover3d({
-      selector: ".logo__card",
-      shine: true,
-      sensitivity: 20,
+		selector: ".logo__card",
+		shine: true,
+		sensitivity: 20,
    });
    $('.btn-floating').click(function(e) {
       var link = $(this).attr('href');

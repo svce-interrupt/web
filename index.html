@@ -17,14 +17,37 @@
 	<!-- Home Button
 	================================================== -->
 	<div class="fixed-action-btn">
-	  <a class="btn-floating btn-large" href="#home">
+	  <a class="btn-floating btn-large" href="#navbar">
 		<i class="large material-icons">arrow_upward</i>
 	  </a>
 	</div>
 
+	<!-- Nav Bar
+	================================================== -->
+	<div class="navbar-fixed">
+		<nav id="navbar" class="teal">
+			<div class="nav-wrapper">
+			  <a href="#home" class="center brand-logo">Interrupt 2017</a>
+			  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			  <ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#team">Team</a></li>
+			  </ul>
+			</div>
+		</nav>
+	</div>
+	<ul class="side-nav" id="mobile-demo">
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#about">About</a></li>
+	  <li><a href="#events">Events</a></li>
+	  <li><a href="#team">Team</a></li>
+	</ul>
+
 	<!-- Home Section
 	================================================== -->
-	<section data-role="section center-align" id="home">
+	<section data-role="section" class="center-align" id="home">
 	<div class="container">
 		<div class="logo">
 			<div class="logo__card">
@@ -45,12 +68,12 @@
 		<div class="row">
 			<div class="col s10 offset-s1 page text-center">
 				<!-- Modal Trigger -->
-				<div class="col m6 offset-m3">
-					<div class="col s10 offset-s1 m5 waves-effect waves-light btn">
+				<div class="col s6 offset-s3">
+					<div class="col s12 m5 waves-effect waves-light btn">
 						<a class="modal-trigger white-text" href="#register">Register Now</a>
 					</div>
-					<div class="col m2"></div>
-					<div class="col s10 offset-s1 m5 waves-effect waves-light btn">
+					<div class="col s12 m2"></div>
+					<div class="col s12 m5 waves-effect waves-light btn">
 						<a class="modal-trigger white-text" href="#login">Log In</a>
 					</div>
 				</div>
