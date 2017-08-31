@@ -70,11 +70,11 @@
 				<!-- Modal Trigger -->
 				<div class="col s6 offset-s3">
 					<div class="col s12 m5 waves-effect waves-light btn">
-						<a class="modal-trigger white-text" href="#register">Register Now</a>
+						<a class="modal-trigger white-text" href="#signup_signin">Sign Up/Sign In</a>
 					</div>
 					<div class="col s12 m2"></div>
 					<div class="col s12 m5 waves-effect waves-light btn">
-						<a class="modal-trigger white-text" href="#login">Log In</a>
+						<a class="modal-trigger white-text" href="#register">Events_Register</a>
 					</div>
 				</div>
 			</div>
@@ -174,12 +174,20 @@
 		</div>
 	</section>
 	<!-- Modal Contents -->
-	<div id="register" class="modal modal-fixed">
-		<form class="col s12" action="#">
+	<div id="signup_signin" class="modal modal-fixed">
+	<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s6"><a  class="active" href="#signup">Sign Up</a></li>
+        <li class="tab col s6"><a href="#signin">Sign In</a></li>
+       
+      </ul>
+    </div>
+    <div id="signup" class="col s12"><form class="col s12" action="#">
 			<div class="black-text modal-content">
 				<div class="row">
 					<div class="col s12 center-align">
-						<h4>SVCE Interrupt '17 - Registration</h4>
+						<h4>SVCE Interrupt '17 - Sign Up</h4>
 					</div>
 				</div>
 				<div class="row">
@@ -192,6 +200,13 @@
 						<i class="material-icons prefix black-text text-darken-2">person</i>
 						<input id="last_name" type="text" class="validate" data-length="20">
 						<label for="last_name">Last Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix black-text text-darken-2">school</i>
+						<input id="college" type="text" class="validate" data-length="50">
+						<label for="college">College Name</label>
 					</div>
 				</div>
 				<div class="row">
@@ -218,16 +233,67 @@
 						<label for="phone">Confirm Password</label>
 					</div>
 				</div>
+				
+				
+				
 				<div class="row">
-					<div class="input-field col s12">
-						<i class="material-icons prefix black-text text-darken-2">school</i>
-						<input id="college" type="text" class="validate" data-length="50">
-						<label for="college">College Name</label>
+					<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popup">Sign Up
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+    <div id="signin" class="col s12">
+    	<form class="col s12" action="#">
+			<div class="black-text modal-content">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h4>SVCE Interrupt '17 - Sign In</h4>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col s12 text-center">
-						<span class="bold-text">Events</span><br />
+					<div class="input-field col s12">
+						<i class="material-icons prefix black-text text-darken-2">email</i>
+						<input id="first_name" type="email" class="validate" data-length="20">
+						<label for="E-mail">E-mail</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix black-text text-darken-2">lock</i>
+						<input id="last_name" type="password" class="validate" data-length="20">
+						<label for="last_name">Password</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m6">
+						<input name="selectEvent" type="checkbox" id="remember"/>
+						<label for="remember">Remember Me</label>
+					</div>
+					<div class="col s12 m6">
+						<a href="#">Forgot password ?</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<button type="submit" class="waves-effect waves-light btn blue modal-trigger">Sign In
+							<i class="material-icons right">done</i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+ 
+  </div>
+	</div>
+	<div id="register" class="modal">
+		<form class="col s12" action="#">
+			<div class="black-text modal-content">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h4>SVCE Interrupt '17 - Events Registration</h4>
 					</div>
 				</div>
 				<div class="row">
@@ -275,49 +341,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<a class="waves-effect waves-light btn blue modal-trigger modal-close" href="#popup">Register
-						<i class="material-icons right">send</i>
-					</a>
-				</div>
-			</div>
-		</form>
-	</div>
-	<div id="login" class="modal">
-		<form class="col s12" action="#">
-			<div class="black-text modal-content">
-				<div class="row">
-					<div class="col s12 center-align">
-						<h4>SVCE Interrupt '17 - Login</h4>
-					</div>
-				</div>
-				<div class="row">
 					<div class="input-field col s12">
-						<i class="material-icons prefix black-text text-darken-2">email</i>
-						<input id="first_name" type="email" class="validate" data-length="20">
-						<label for="E-mail">E-mail</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<i class="material-icons prefix black-text text-darken-2">lock</i>
-						<input id="last_name" type="password" class="validate" data-length="20">
-						<label for="last_name">Password</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s12 m6">
-						<input name="selectEvent" type="checkbox" id="remember"/>
-						<label for="remember">Remember Me</label>
-					</div>
-					<div class="col s12 m6">
-						<a href="#">Forgot password ?</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<a class="waves-effect waves-light btn blue modal-trigger" href="#">Log In
+						<button type="submit" class="waves-effect waves-light btn blue modal-trigger">Register
 							<i class="material-icons right">done</i>
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
