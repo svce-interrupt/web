@@ -44,6 +44,8 @@
 	  <li><a href="#events">Events</a></li>
 	  <li><a href="#team">Team</a></li>
 	</ul>
+	<!-- End of Nav Bar
+	================================================== -->
 
 	<!-- Home Section
 	================================================== -->
@@ -88,6 +90,8 @@
 		</div>
 	</div>
 	</section>
+	<!-- End of Home Section
+	================================================== -->
 
 	<!-- About Section
 	================================================== -->
@@ -108,6 +112,8 @@
 			</div>
 		</div>
 	</section>
+	<!-- End of About Section
+	================================================== -->
 
 	<!-- Events Section
 	================================================== -->
@@ -158,6 +164,8 @@
 			</div>
 		</div>
 	</section>
+	<!-- End of Events Section
+	================================================== -->
 
 	<!-- Team Section
 	================================================== -->
@@ -173,17 +181,25 @@
 			</div>
 		</div>
 	</section>
-	<!-- Modal Contents -->
+	<!-- End of Team Section
+	================================================== -->
+
+
+	
+	<!-- Modal Content -->
 	<div id="signup_signin" class="modal modal-fixed">
 	<div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s6"><a  class="active" href="#signup">Sign Up</a></li>
-        <li class="tab col s6"><a href="#signin">Sign In</a></li>
-       
-      </ul>
-    </div>
-    <div id="signup" class="col s12"><form class="col s12" action="#">
+		<!--toggle sign up/in-->
+    	<div class="col s12">
+      		<ul class="tabs">
+        	<li class="tab col s6"><a  class="active" href="#signup">Sign Up</a></li>
+        	<li class="tab col s6"><a href="#signin">Sign In</a></li>
+       		</ul>
+    	</div>
+    	<!--end of toggle-->
+    	
+    	<!--start of sign up-->
+    	<div id="signup" class="col s12"><form class="col s12" action="#">
 			<div class="black-text modal-content">
 				<div class="row">
 					<div class="col s12 center-align">
@@ -233,9 +249,6 @@
 						<label for="phone">Confirm Password</label>
 					</div>
 				</div>
-				
-				
-				
 				<div class="row">
 					<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popup">Sign Up
 						<i class="material-icons right">send</i>
@@ -244,7 +257,9 @@
 			</div>
 		</form>
 	</div>
-    <div id="signin" class="col s12">
+	<!--end of sign up-->
+	<!--Start of sign in-->
+	<div id="signin" class="col s12">
     	<form class="col s12" action="#">
 			<div class="black-text modal-content">
 				<div class="row">
@@ -285,9 +300,14 @@
 			</div>
 		</form>
 	</div>
+		<!--end of sign in-->
  
-  </div>
+  	</div>
 	</div>
+	<!--==========end of sign in/up=========-->
+
+
+	<!--=========start of events registration======-->
 	<div id="register" class="modal">
 		<form class="col s12" action="#">
 			<div class="black-text modal-content">
@@ -350,17 +370,33 @@
 			</div>
 		</form>
 	</div>
-	<div id="popup" class="modal">
-		<div class="black-text modal-content">
-			<h3>Thank you for registering!</h3>
-			<p>A confirmation mail has been sent to you.</p>
-			<p>Please click on the link on the email to confirm your registration.</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
-		</div>
-	</div>
-	<div id="event1Modal" class="modal modal-fixed black-text">
+	<!--=========end of events registration======-->
+
+
+
+
+
+
+				<div id="popup" class="modal">
+					<div class="black-text modal-content">
+						<h3>Thank you for registering!</h3>
+						<p>A confirmation mail has been sent to you.</p>
+						<p>Please click on the link on the email to confirm your registration.</p>
+    				</div>
+    				<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+					</div>
+ 				</div>
+			
+		
+		
+	
+	
+
+
+<!-- Solo Events Section
+	================================================== -->
+<div id="event1Modal" class="modal modal-fixed black-text">
 		<div class="row">
 			<ul class="tabs">
 				<li class="tab col s4"><a href="#aboutEvent1" class="teal-text">About</a></li>
@@ -630,7 +666,7 @@
 				  <li>Rule 2</li>
 			  </ol>
 		  </div>
-		<div id="contactEvent9" class="col s12 modal-content">
+		  <div id="contactEvent9" class="col s12 modal-content">
 			  <h5>Contact</h5>
 			  <p class="left-align">
 				  John Doe: +91 12345 67890
@@ -639,6 +675,10 @@
 			  </p>
 		  </div>
 	</div>
+	<!--End of Solo Events Section
+	================================================== -->
+
+
 	<!-- core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
