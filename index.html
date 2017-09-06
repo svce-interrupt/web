@@ -34,6 +34,7 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#events">Events</a></li>
 					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -43,6 +44,7 @@
 	  <li><a href="#about">About</a></li>
 	  <li><a href="#events">Events</a></li>
 	  <li><a href="#team">Team</a></li>
+		<li><a href="#contact">Contact Us</a></li>
 	</ul>
 	<!-- End of Nav Bar
 	================================================== -->
@@ -68,9 +70,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s8 offset-s2 m4 offset-m4 waves-effect waves-light btn">
-					<a class="modal-trigger white-text" href="#signup_signin">Sign Up/Sign In</a>
-				</div>
+				<a class="col s8 offset-s2 m4 offset-m4 waves-effect waves-light btn modal-trigger white-text" href="#signup_signin">Sign Up/Sign In</a>
 			</div>
 			<div class="row">
 				<div class="col s10 offset-s1 page text-center">
@@ -178,9 +178,51 @@
 					</p>
 				</div>
 			</div>
+			<div class="col s10 offset-s1 page text-center">
+				<p class="center-align">
+					<a class="btn-floating btn-large waves-effect waves-light green nav-btn" href="#contact"><i class="large material-icons">arrow_downward</i></a>
+				</p>
+			</div>
 		</div>
 	</section>
 	<!-- End of Team Section
+	================================================== -->
+
+	<!-- Contact Section
+	================================================== -->
+	<section data-role="section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col s10 offset-s1 page text-center">
+					<h1 class="fromLeft">Contact Us</h1>
+					<div class="row">
+						<div class="col s12">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7617832924684!2d79.969868514829!3d12.987082518052252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd16ab0d05d%3A0x8251d4e39fba139d!2sSri+Venkateswara+College+of+Engineering!5e0!3m2!1sen!2s!4v1504725145340" frameborder="0" style="border:0" class="map"></iframe>
+						</div>
+						<div class="col s12">
+							<div class="row">
+								<div class="col s12 m3 center-align">
+									Charan Suresh: <br />+91 12345 67890 <br />
+									Charan Suresh: <br />+91 12345 67890
+								</div>
+								<div class="col s12 m3 center-align">
+									Facebook: <br /><a href="" target="_blank">Interrupt 2K17</a> <br />
+									Email: <br /><a href="mailto:" target="_blank">interrupt2k17@gmail.com</a>
+								</div>
+								<div class="col s12 m6 center-align">
+									Address: <br />
+									Post Bag #1, Pennalur, Sri Perumbudur <br />
+									Tamil Nadu, India <br />
+									Pin: 602 117
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Contact Section
 	================================================== -->
 
 	<!-- Modal Content
@@ -202,11 +244,6 @@
 		    <div id="signup" class="col s12">
 				<form class="col s12" action="#">
 					<div class="black-text modal-content">
-						<div class="row">
-							<div class="col s12 center-align">
-								<h4>SVCE Interrupt '17 - Sign Up</h4>
-							</div>
-						</div>
 						<div class="row">
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">person</i>
@@ -251,9 +288,11 @@
 							</div>
 						</div>
 						<div class="row">
-							<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popupReg">Sign Up
-								<i class="material-icons right">send</i>
-							</button>
+							<div class="input-field col s12 m3 offset-m9">
+								<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popup">Sign Up
+									<i class="material-icons right">send</i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</form>
@@ -263,11 +302,6 @@
 			<div id="signin" class="col s12">
 	    	<form class="col s12" action="#">
 				<div class="black-text modal-content">
-					<div class="row">
-						<div class="col s12 center-align">
-							<h4>SVCE Interrupt '17 - Sign In</h4>
-						</div>
-					</div>
 					<div class="row">
 						<div class="input-field col s12">
 							<i class="material-icons prefix black-text text-darken-2">email</i>
@@ -283,17 +317,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s12 m6">
+						<div class="col s12">
 							<input name="selectEvent" type="checkbox" id="remember"/>
 							<label for="remember">Remember Me</label>
 						</div>
-						<div class="col s12 m6">
-							<a href="#">Forgot password ?</a>
-						</div>
 					</div>
 					<div class="row">
-						<div class="input-field col s12">
-							<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popupSign">Sign In
+						<div class="input-field col s12 m3 offset-m9">
+							<button type="submit" class="waves-effect waves-light btn blue modal-trigger">Sign In
 								<i class="material-icons right">done</i>
 							</button>
 						</div>
@@ -310,11 +341,6 @@
 	<div id="register" class="modal">
 		<form class="col s12" action="#">
 			<div class="black-text modal-content">
-				<div class="row">
-					<div class="col s12 center-align">
-						<h4>SVCE Interrupt '17 - Events Registration</h4>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col s12 m4">
 						<p>
@@ -372,20 +398,11 @@
 
 	<!-- Successful Registration Pop-up Modal
 	================================================== -->
-	<div id="popupReg" class="modal">
+	<div id="popup" class="modal">
 		<div class="black-text modal-content">
-			<h5>Thank you for Signing up!</h5>
+			<h3>Thank you for registering!</h3>
 				<p>A confirmation mail has been sent to you.</p>
-				<p>Please click on the link on your email to confirm your registration.</p>
-    	</div>
-    	<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
-		</div>
- 	</div>
- 	<div id="popupSign" class="modal">
-		<div class="black-text modal-content">
-			<h5>You have successfully Signed In</h5>
-				<p>You can now Register for events</p>
+				<p>Please click on the link on the email to confirm your registration.</p>
     	</div>
     	<div class="modal-footer">
 			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
@@ -443,7 +460,7 @@
 				If you got that, you may have what it takes to tackle insane databases with queries that will search the word _supercalifragilisticexpialidocious_ like a walk in the park.
 			</p>
 			<p>
-				This event comprises of 2 rounds, with General MCQs and a querying round where you get to bring your A - Game and add it to a primary key. Register here to flip the tables in your favor!
+				This event comprises of 2 rounds, with General MCQs and a querying round where you get to bring your A - Game and add it to a primary key. Register now to flip the tables in your favor!
 			</p>
 		</div>
 		<div id="rulesEvent2" class="col s12 modal-content">
@@ -472,7 +489,7 @@
 				Were you born to code? Then grab two of your friends and head on down to Code-o-poly!
 			</p>
 			<p>
-				 Players who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola. 
+				 Players who make it through our ultimate C skills test get into a round of Code Bingo, where CS meets Tumbola.
 			</p>
 			<p>
 				 Registrations open now!
@@ -501,14 +518,14 @@
 		<div id="aboutEvent4" class="col s12 modal-content">
 			<h5>Breaking the Logician's Code</h5>
 			<p class="text-justify">
-				Imagination takes you everywhere" - Albert Einstein. 
+				Imagination takes you everywhere" - Albert Einstein.
 			</p>
 			<p>Are you a person who agrees to disagree with him on this and prove that it is logic that takes you everywhere and beyond?
 			</p>
 			<p> Take part in this coding event comprising of 2 rounds - a logical puzzle solving round followed by a Room Escape style round where you'll have to find clues to escape and win. It doesn't get better than this!
 			</p>
 			<p>
-			 Register here!
+			 Register now!
 			</p>
 		</div>
 		<div id="rulesEvent4" class="col s12 modal-content">
@@ -538,9 +555,9 @@
 			</p>
 			<p>
 				 Fascinate the judges by sharing your in depth knowledge and unique insights on the chosen topic are prove to them that you are worthy of being 'the chosen one'!
-			</p> 
+			</p>
 			<p>
-				 Register here!
+				 Register now!
 			</p>
 		</div>
 		<div id="rulesEvent5" class="col s12 modal-content">
@@ -575,7 +592,7 @@
 			 <p>
 			  It's always gonna be a win for you.
 			</p>
-			 Register here!
+			 Register now!
 			</p>
 		</div>
 		<div id="rulesEvent6" class="col s12 modal-content">
@@ -631,7 +648,7 @@
 			</p>
 			<p> That's right, watch as all your "other" skills being tested through rounds varying from playing dumb in charades to coming up with a creative ad for Adzap.
 			</p>
-			<p> Register now if you think you've got what it takes to Mind Your Business. 
+			<p> Register now if you think you've got what it takes to Mind Your Business.
 			</p>
 			<p>Rounds will be announced on-spot.
 			</p>
@@ -661,7 +678,7 @@
 			<p class="text-justify">
 				"Ahoy!" Anchor up at the C-Port, where everyone goes "Arr!" as you take out your computers and venture into the Web, ready to code your way to victory.
 			</p>
-			<p> Swim through the Torrents and fight the Pythons of the sea as you search for that right algorithm to reach for Davy Jones' Locker! 
+			<p> Swim through the Torrents and fight the Pythons of the sea as you search for that right algorithm to reach for Davy Jones' Locker!
 			</p>
 			<p>
 			Register now, weigh your anchors, and Give No Quarter.
@@ -695,7 +712,7 @@
 			<p>
 			 	Four clues, one word and a ticking clock.
 			</p>
-			<p> 
+			<p>
 				How quickly can your brain put two and two together? Come show us at Connect4!
 			</p>
 		</div>
@@ -746,7 +763,7 @@
 			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
 		</div>
 	</div>
-	
+
 
 	<!-- End of Modal Content
 	================================================== -->
