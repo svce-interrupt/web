@@ -251,7 +251,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popup">Sign Up
+							<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popupReg">Sign Up
 								<i class="material-icons right">send</i>
 							</button>
 						</div>
@@ -293,7 +293,7 @@
 					</div>
 					<div class="row">
 						<div class="input-field col s12">
-							<button type="submit" class="waves-effect waves-light btn blue modal-trigger">Sign In
+							<button type="submit" class="waves-effect waves-light btn blue modal-trigger" href="#popupSign">Sign In
 								<i class="material-icons right">done</i>
 							</button>
 						</div>
@@ -372,11 +372,20 @@
 
 	<!-- Successful Registration Pop-up Modal
 	================================================== -->
-	<div id="popup" class="modal">
+	<div id="popupReg" class="modal">
 		<div class="black-text modal-content">
-			<h3>Thank you for registering!</h3>
+			<h5>Thank you for Signing up!</h5>
 				<p>A confirmation mail has been sent to you.</p>
-				<p>Please click on the link on the email to confirm your registration.</p>
+				<p>Please click on the link on your email to confirm your registration.</p>
+    	</div>
+    	<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+		</div>
+ 	</div>
+ 	<div id="popupSign" class="modal">
+		<div class="black-text modal-content">
+			<h5>You have successfully Signed In</h5>
+				<p>You can now Register for events</p>
     	</div>
     	<div class="modal-footer">
 			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
