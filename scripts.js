@@ -30,24 +30,30 @@ sr.reveal('.logo',{
 });
 
 $(document).ready(function(){
-    $('.modal').modal();
+  $('.modal').modal({
+    ready: function () {
+        $('ul.tabs').tabs();
+    }
+  });
+  
 	$(".button-collapse").sideNav({
-        closeOnClick: true,
-        draggable: true,
-    });
+      closeOnClick: true,
+      draggable: true,
+  });
 
-    $(".logo").hover3d({
-        selector: ".logo__card",
+  $(".logo").hover3d({
+    selector: ".logo__card",
 		shine: true,
 		sensitivity: 20,
-    });
+  });
 
-    $('.btn-floating').click(function(e) {
-        var link = $(this).attr('href');
-        //console.log($(link).offset().top);
-        $('html, body').animate({
-            scrollTop: $(link).offset().top
-        }, 900);
-        e.preventDefault();
-    });
+  $('.btn-floating').click(function(e) {
+    var link = $(this).attr('href');
+    //console.log($(link).offset().top);
+    $('html, body').animate({
+        scrollTop: $(link).offset().top
+    }, 900);
+    e.preventDefault();
+  });
+
 });
