@@ -57,6 +57,15 @@ section {
     padding: 2em;
 }
 
+.map {
+	min-height: 300px;
+	width: 100%;
+}
+
+.white-background {
+	background: white;
+}
+
 /*Event Boxes*/
 .event {
    border:1px solid rgba(193,79,82,1);
