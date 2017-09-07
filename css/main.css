@@ -28,6 +28,18 @@ section {
 	background: rgba(0, 0, 0, 0.2);
 }
 
+.matrix-green {
+	background-color: rgb(10, 34, 0);
+}
+
+.matrix-green-2 {
+	background-color: rgb(37, 106, 14);
+}
+
+.matrix-green-text {
+	color: rgb(10, 34, 0) !important;
+}
+
 .page {
     padding: 5em;
     margin: auto 5%;

@@ -62,7 +62,7 @@ $(document).ready(function(){
     .continue('September 25th.', 200)
     .pause(3000)
     .back(15, 100)
-    .continue('Be There.', 200)
+    .continue('Save the Date.', 200)
     .pause(1000)
     .back(15, 100)
     .continue('September 25th.', 200)
