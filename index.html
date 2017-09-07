@@ -246,54 +246,61 @@
 			<!--end of toggle-->
 			<!--start of sign up-->
 			<div id="signup" class="col s12">
-				<form class="col s12" action="#">
+				<form class="col s12" id="reg-form" action="#">
 					<div class="black-text modal-content">
 						<div class="row">
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">person</i>
-								<input id="first_name" type="text" class="validate" data-length="20">
+								<input id="first_name" type="text" class="validate" name="fname" data-length="20">
 								<label for="first_name">First Name</label>
+								<span class="errors"></span>
 							</div>
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">person</i>
-								<input id="last_name" type="text" class="validate" data-length="20">
+								<input id="last_name" type="text" class="validate" name="lname" data-length="20">
 								<label for="last_name">Last Name</label>
+								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
 								<i class="material-icons prefix black-text text-darken-2">school</i>
-								<input id="college" type="text" class="validate" data-length="50">
+								<input id="college" type="text" class="validate" name="col" data-length="50">
 								<label for="college">College Name</label>
+								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">email</i>
-								<input id="email" type="email" class="validate" data-length="35">
+								<input id="email" type="email" class="validate" name="email" data-length="35">
 								<label for="email">Email</label>
+								<span class="errors"></span>
 							</div>
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">local_phone</i>
-								<input id="phone" type="tel" class="validate"  data-length="10">
+								<input id="phone" type="tel" class="validate" name="mobile_num"  data-length="10">
 								<label for="phone">Phone Number</label>
+								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">lock</i>
-								<input id="password" type="password" class="validate"  data-length="16">
-								<label for="phone">Password</label>
+								<input id="password" type="password" class="validate" name="pass" data-length="16">
+								<label for="password">Password</label>
+								<span class="errors"></span>
 							</div>
 							<div class="input-field col s12 m6">
 								<i class="material-icons prefix black-text text-darken-2">lock</i>
-								<input id="password_confirm" type="password" class="validate"  data-length="16">
-								<label for="phone">Confirm Password</label>
+								<input id="password_confirm" type="password" class="validate" name="confirm_pass" data-length="16">
+								<label for="password_confirm">Confirm Password</label>
+								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12 m4 offset-m8">
-								<button type="submit" class="waves-effect waves-light btn modal-trigger matrix-green-2" href="#popup">
+								<button type="submit" class="waves-effect waves-light btn matrix-green-2">
 									<i class="material-icons right">done</i>Sign Up
 								</button>
 							</div>
@@ -309,15 +316,15 @@
 						<div class="row">
 							<div class="input-field col s12">
 								<i class="material-icons prefix black-text text-darken-2">email</i>
-								<input id="first_name" type="email" class="validate" data-length="20">
-								<label for="E-mail">E-mail</label>
+								<input id="email_login" type="email" class="validate" data-length="20">
+								<label for="email_login">E-mail</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
 								<i class="material-icons prefix black-text text-darken-2">lock</i>
-								<input id="last_name" type="password" class="validate" data-length="20">
-								<label for="last_name">Password</label>
+								<input id="pass_login" type="password" class="validate" data-length="20">
+								<label for="pass_login">Password</label>
 							</div>
 						</div>
 						<div class="row">
