@@ -49,7 +49,14 @@ $(document).ready(function(){
 
   $('.btn-floating').click(function(e) {
     var link = $(this).attr('href');
-    //console.log($(link).offset().top);
+    $('html, body').animate({
+        scrollTop: $(link).offset().top
+    }, 900);
+    e.preventDefault();
+  });
+
+  $('.nav-scroll').click(function(e) {
+    var link = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(link).offset().top
     }, 900);
