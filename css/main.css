@@ -36,6 +36,10 @@ section {
 	background-color: rgb(37, 106, 14);
 }
 
+.matrix-green-2:hover {
+	background-color: rgb(10, 84, 0);
+}
+
 .matrix-green-text {
 	color: rgb(10, 34, 0) !important;
 }
