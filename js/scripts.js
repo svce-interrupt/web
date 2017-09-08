@@ -129,7 +129,7 @@ $(document).ready(function(){
             confirm_pass: {
                 required: true,
                 minlength: 6,
-                equalTo: "#pass"
+                equalTo: "#password"
             }
         },
         messages: {
