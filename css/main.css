@@ -49,6 +49,10 @@ section {
 	margin: auto 5%;
 }
 
+.img-center{
+	margin-left: 40%;
+}
+
 .text-center {
 	text-align: center;
 }
