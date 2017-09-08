@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+
 	<!-- Custom style -->
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/typer.css" rel="stylesheet">
@@ -29,7 +30,7 @@
 		<nav id="navbar" class="matrix-green">
 			<div class="nav-wrapper">
 				<a href="#home" class="center brand-logo">Interrupt 2017</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="#home" class="waves-effect waves-light nav-scroll">Home</a></li>
 					<li><a href="#about" class="waves-effect waves-light nav-scroll">About</a></li>
@@ -249,50 +250,64 @@
 				<form class="col s12" id="reg-form" action="#">
 					<div class="black-text modal-content">
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">person</i>
+							<div class="col s2 m1">
+								<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="first_name" type="text" class="validate" name="fname" data-length="20">
 								<label for="first_name">First Name</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">person</i>
+								<div class="col s2 m1">
+									<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+								</div>
+								<div class="input-field col s10 m5 ">
 								<input id="last_name" type="text" class="validate" name="lname" data-length="20">
 								<label for="last_name">Last Name</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12">
-								<i class="material-icons prefix black-text text-darken-2">school</i>
+							<div class="col s2 m1">
+								<i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m11">
 								<input id="college" type="text" class="validate" name="col" data-length="50">
 								<label for="college">College Name</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">email</i>
+							<div class="col s2 m1">
+								<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="email" type="email" class="validate" name="email" data-length="35">
 								<label for="email">Email</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">local_phone</i>
+							<div class="col s2 m1">
+								<i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="phone" type="tel" class="validate" name="mobile_num"  data-length="10">
 								<label for="phone">Phone Number</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="password" type="password" class="validate" name="pass" data-length="16">
 								<label for="phone">Password</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="password_confirm" type="password" class="validate" name="confirm_pass" data-length="16">
 								<label for="phone">Confirm Password</label>
 								<span class="errors"></span>
@@ -789,7 +804,9 @@
 		<!-- Scripts for image hover effect and scroll reveal -->
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="js/jquery.hover3d.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script src="https://use.fontawesome.com/0cd87a9fa4.js"></script>
+
 		<!-- Custom scripts -->
   	<script src="js/scripts.js"></script>
 		<script src="js/typer.min.js"></script>
