@@ -226,10 +226,12 @@
 										</p>
 									</div>
 									<div class="col s12 m6 text-center">
-										Address: <br />
-										Post Bag #1, Pennalur, Sri Perumbudur <br />
-										Tamil Nadu, India <br />
-										Pin: 602 117
+										<p>
+											Address: <br />
+											Post Bag #1, Pennalur, Sri Perumbudur <br />
+											Tamil Nadu, India <br />
+											Pin: 602 117
+										</p>
 									</div>
 								</div>
 							</div>
@@ -263,50 +265,64 @@
 				<form class="col s12" id="reg-form" action="#">
 					<div class="black-text modal-content">
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="first_name" type="text" class="validate" required="" name="fname" data-length="20">
 								<label for="first_name">First Name</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">person</i>
+							<div class="col s2 m1">
+								<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="last_name" type="text" class="validate" required="" name="lname" data-length="20">
 								<label for="last_name">Last Name</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12">
-								<i class="material-icons prefix black-text text-darken-2">school</i>
+							<div class="col s2 m1">
+								<i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m11">
 								<input id="college" type="text" class="validate" required="" name="col" data-length="50">
 								<label for="college">College Name</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">email</i>
+							<div class="col s2 m1">
+								<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="email" type="email" class="validate" required="" name="email" data-length="35">
 								<label for="email">Email</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">local_phone</i>
+							<div class="col s2 m1">
+								<i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="phone" type="tel" class="validate" required="" name="mobile_num"  data-length="10">
 								<label for="phone">Phone Number</label>
 								<span class="errors"></span>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="password" type="password" class="validate" required="" name="pass" data-length="16">
 								<label for="password">Password</label>
 								<span class="errors"></span>
 							</div>
-							<div class="input-field col s12 m6">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m5">
 								<input id="password_confirm" type="password" class="validate" required="" name="confirm_pass" data-length="16">
 								<label for="password_confirm">Confirm Password</label>
 								<span class="errors"></span>
@@ -328,15 +344,19 @@
 				<form class="col s12" action="#">
 					<div class="black-text modal-content">
 						<div class="row">
-							<div class="input-field col s12">
-								<i class="material-icons prefix black-text text-darken-2">email</i>
+							<div class="col s2 m1">
+								<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m11">
 								<input id="email_login" type="email" class="validate" data-length="20">
 								<label for="email_login">E-mail</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12">
-								<i class="material-icons prefix black-text text-darken-2">lock</i>
+							<div class="col s2 m1">
+								<i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="input-field col s10 m11">
 								<input id="pass_login" type="password" class="validate" data-length="20">
 								<label for="pass_login">Password</label>
 							</div>
@@ -605,37 +625,37 @@
 		</div>
 	</div>
 	<div id="event6Modal" class="modal modal-fixed black-text">
-			<div class="row">
-				<ul class="tabs">
-					<li class="tab col s6"><a href="#aboutEvent6" class="teal-text">About</a></li>
-					<li class="tab col s6"><a href="#rulesEvent6" class="teal-text">Rules</a></li>
-					<div class="indicator teal" style="z-index:1"></div>
-				</ul>
-			</div>
-			<div id="aboutEvent6" class="col s12 modal-content">
-				<h5>Quiz Wiz</h5>
-				<p class="text-justify">
-					Are you a fount of computer knowledge? Do you feel that you're a 'A walking computer encyclopedia'? If so, then let your inner quiz enthusiast come out and take part in this quiz event.
-				</p>
-				<p>
-					This event comprises of 2 rounds- the prelims and the finals. In each round, you'll be asked a number of questions of different types testing your knowledge. If you win, you earn from it. Even otherwise, you learn from it.
-				</p>
-				<p>
-					It's always gonna be a win for you.
-				</p>
-				Register now!
-			</div>
-			<div id="rulesEvent6" class="col s12 modal-content">
-				<h5>Rules</h5>
-				<ol class="left-align">
-					<li>Team must consist of maximum 3 members.</li>
-					<li>Quiz master's decision is final.</li>
-				</ol>
-			</div>
-			<div class="modal-footer">
-				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
-			</div>
+		<div class="row">
+			<ul class="tabs">
+				<li class="tab col s6"><a href="#aboutEvent6" class="teal-text">About</a></li>
+				<li class="tab col s6"><a href="#rulesEvent6" class="teal-text">Rules</a></li>
+				<div class="indicator teal" style="z-index:1"></div>
+			</ul>
 		</div>
+		<div id="aboutEvent6" class="col s12 modal-content">
+			<h5>Quiz Wiz</h5>
+			<p class="text-justify">
+				Are you a fount of computer knowledge? Do you feel that you're a 'A walking computer encyclopedia'? If so, then let your inner quiz enthusiast come out and take part in this quiz event.
+			</p>
+			<p>
+				This event comprises of 2 rounds- the prelims and the finals. In each round, you'll be asked a number of questions of different types testing your knowledge. If you win, you earn from it. Even otherwise, you learn from it.
+			</p>
+			<p>
+				It's always gonna be a win for you.
+			</p>
+			Register now!
+		</div>
+		<div id="rulesEvent6" class="col s12 modal-content">
+			<h5>Rules</h5>
+			<ol class="left-align">
+				<li>Team must consist of maximum 3 members.</li>
+				<li>Quiz master's decision is final.</li>
+			</ol>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+		</div>
+	</div>
 	<div id="event7Modal" class="modal modal-fixed black-text">
 		<div class="row">
 			<ul class="tabs">
@@ -791,26 +811,27 @@
 	</div>
 
 
-<!-- End of Modal Content
-================================================== -->
+	<!-- End of Modal Content
+	================================================== -->
 
-<!-- core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!-- Compiled and minified JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-<!-- Scripts for image hover effect and scroll reveal -->
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="js/jquery.hover3d.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-<!-- Custom scripts -->
-<script src="js/scripts.js"></script>
-<script src="js/typer.min.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3n5FyPcc6obZMgNKkOXv-PHP1OKSjQ4c&callback=myMap"></script>
-<!--
-================================================== -->
+	<!-- core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- Compiled and minified JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<!-- Scripts for image hover effect and scroll reveal -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="js/jquery.hover3d.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script src="https://use.fontawesome.com/0cd87a9fa4.js"></script>
+	<!-- Custom scripts -->
+	<script src="js/scripts.js"></script>
+	<script src="js/typer.min.js"></script>
+	<!-- Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3n5FyPcc6obZMgNKkOXv-PHP1OKSjQ4c&callback=myMap"></script>
+	<!--
+	================================================== -->
 </body>
 </html>
